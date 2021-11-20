@@ -1,11 +1,12 @@
 import React from 'react';
-import { View } from 'react-native';
-import { BackButton } from '../../components/BackButton';
+ import { BackButton } from '../../components/BackButton';
+import { ImageSlider } from '../ImageSlider';
 
 
 import {
   Container,
-  Header
+  Header,
+  CarImages
 } from './styles';
 
 export function CardDetails() {
@@ -15,6 +16,12 @@ export function CardDetails() {
         <BackButton onPress={() =>{} }  />
       </Header>
 
+
+      <CarImages>
+       <ImageSlider imagesUrl={['https://freepngimg.com/thumb/audi/35227-5-audi-rs5-red.png']}   />
+       </CarImages>
+
     </Container>
   );
 }
+ 
